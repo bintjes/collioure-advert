@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Appartement pieds dans l'eau à Collioure – Plage de l'Oli · Location en direct</title>
+  <meta name="description" content="T1 bis de 25 m² surplombant la crique de la plage de l'Oli à Collioure. Accès direct à la plage, balcon vue mer, wifi rapide, parking couvert. Réservez en direct auprès du propriétaire, sans frais de service.">
+  <meta property="og:title" content="Appartement pieds dans l'eau à Collioure – Plage de l'Oli">
+  <meta property="og:description" content="Accès direct à la crique, balcon vue mer, parking couvert. Réservation en direct, sans frais de plateforme.">
+  <meta property="og:image" content="img/balcon-vue-crique.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>">
+  <style>
+    :root {
+      --mer: #12457a;
+      --mer-clair: #2a7ab0;
+      --terre: #c8553d;
+      --sable: #f6efe4;
+      --texte: #1f2a33;
+      --gris: #5b6770;
+      --blanc: #fff;
+      --rayon: 14px;
+      --ombre: 0 8px 30px rgba(18, 69, 122, .12);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: var(--texte);
+      background: var(--blanc);
+      line-height: 1.6;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: var(--mer-clair); }
+    h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; line-height: 1.2; color: var(--mer); }
+    h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0 0 1rem; }
+    .conteneur { width: min(1100px, 92%); margin: 0 auto; }
+    section { padding: 4.5rem 0; }
+    .fond-sable { background: var(--sable); }
+
+    /* Navigation */
+    nav {
+      position: fixed; inset: 0 0 auto 0; z-index: 10;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: .8rem 4%;
+      transition: background .3s, box-shadow .3s;
+    }
+    nav.solide { background: rgba(255, 255, 255, .96); box-shadow: 0 2px 12px rgba(0, 0, 0, .08); }
+    nav .logo { font-family: Georgia, serif; font-weight: bold; color: var(--blanc); text-decoration: none; font-size: 1.1rem; }
+    nav.solide .logo { color: var(--mer); }
+    nav ul { display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0; }
+    nav ul a { color: var(--blanc); text-decoration: none; font-weight: 500; }
+    nav.solide ul a { color: var(--texte); }
+    @media (max-width: 760px) { nav ul { display: none; } }
+
+    .bouton {
+      display: inline-block; padding: .85rem 1.6rem; border-radius: 999px;
+      background: var(--terre); color: var(--blanc); text-decoration: none;
+      font-weight: 600; border: 0; cursor: pointer; font-size: 1rem;
+      transition: transform .15s, background .15s;
+    }
+    .bouton:hover { transform: translateY(-2px); background: #b04530; }
+    .bouton.secondaire { background: var(--blanc); color: var(--mer); }
+    .bouton.whatsapp { background: #25d366; }
+    .bouton.whatsapp:hover { background: #1eb457; }
+
+    /* Hero */
+    .hero {
+      min-height: 92vh; display: grid; place-items: center; text-align: center;
+      color: var(--blanc); padding: 6rem 1rem 3rem;
+      background: linear-gradient(rgba(10, 35, 60, .35), rgba(10, 35, 60, .55)), url("img/baie-collioure.jpg") center / cover;
+    }
+    .hero h1 { color: var(--blanc); font-size: clamp(2rem, 5.5vw, 3.6rem); margin: 0 0 1rem; text-shadow: 0 2px 16px rgba(0, 0, 0, .3); }
+    .hero p { font-size: clamp(1.05rem, 2vw, 1.3rem); max-width: 680px; margin: 0 auto 2rem; }
+    .hero .note { display: inline-block; margin-bottom: 1.2rem; padding: .35rem 1rem; border-radius: 999px; background: rgba(255, 255, 255, .18); backdrop-filter: blur(4px); font-size: .95rem; }
+    .hero .actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    /* Atouts */
+    .atouts { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1.2rem; margin-top: 2rem; }
+    .atout { background: var(--blanc); padding: 1.4rem; border-radius: var(--rayon); box-shadow: var(--ombre); }
+    .atout .icone { font-size: 1.8rem; }
+    .atout h3 { margin: .5rem 0 .3rem; font-size: 1.15rem; }
+    .atout p { margin: 0; color: var(--gris); font-size: .95rem; }
+
+    /* Présentation */
+    .deux-colonnes { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+    @media (max-width: 800px) { .deux-colonnes { grid-template-columns: 1fr; gap: 2rem; } }
+    .deux-colonnes img { border-radius: var(--rayon); box-shadow: var(--ombre); }
+    .chiffres { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.2rem 0; padding: 0; list-style: none; }
+    .chiffres li { background: var(--sable); padding: .35rem .9rem; border-radius: 999px; font-size: .95rem; }
+
+    /* Galerie */
+    .galerie { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: .8rem; }
+    @media (max-width: 600px) { .galerie { grid-template-columns: 1fr 1fr; gap: .5rem; } }
+    .galerie button { padding: 0; border: 0; background: none; cursor: zoom-in; border-radius: 10px; overflow: hidden; aspect-ratio: 4 / 3; }
+    .galerie img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+    .galerie button:hover img { transform: scale(1.05); }
+    dialog.visionneuse { border: 0; padding: 0; background: transparent; max-width: 95vw; max-height: 95vh; }
+    dialog.visionneuse::backdrop { background: rgba(0, 0, 0, .88); }
+    dialog.visionneuse img { max-width: 95vw; max-height: 85vh; border-radius: 8px; margin: 0 auto; }
+    dialog.visionneuse p { color: var(--blanc); text-align: center; margin: .6rem 0 0; }
+    .visionneuse .ctrl { position: fixed; top: 50%; transform: translateY(-50%); background: rgba(255, 255, 255, .15); color: var(--blanc); border: 0; font-size: 2rem; width: 3rem; height: 3rem; border-radius: 50%; cursor: pointer; }
+    .visionneuse .prec { left: 1rem; }
+    .visionneuse .suiv { right: 1rem; }
+    .visionneuse .fermer { top: 1.5rem; right: 1rem; transform: none; font-size: 1.6rem; }
+
+    /* Équipements */
+    .equipements { columns: 3 220px; column-gap: 2rem; padding: 0; list-style: none; }
+    .equipements li { break-inside: avoid; padding: .35rem 0 .35rem 1.8rem; position: relative; }
+    .equipements li::before { content: "✓"; position: absolute; left: 0; color: var(--mer-clair); font-weight: bold; }
+
+    /* Pourquoi en direct */
+    .direct { background: var(--mer); color: var(--blanc); }
+    .direct h2 { color: var(--blanc); }
+    .comparatif { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.2rem; margin-top: 1.5rem; }
+    .comparatif div { background: rgba(255, 255, 255, .1); padding: 1.3rem; border-radius: var(--rayon); }
+    .comparatif strong { display: block; font-size: 1.1rem; margin-bottom: .3rem; }
+
+    /* Tarifs */
+    .tarif { text-align: center; }
+    .tarif .prix { font-size: 2.2rem; font-weight: bold; color: var(--terre); margin: .2rem 0 0; }
+    .tarif .prix small { font-size: 1rem; font-weight: normal; color: var(--gris); }
+    .aide-tarif { color: var(--gris); font-size: .95rem; margin: 1.2rem 0 2rem; }
+    .etapes { padding-left: 1.4rem; }
+    .etapes li { margin-bottom: .6rem; }
+
+    /* Infos pratiques */
+    .infos { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+    .infos h3 { margin-top: 0; font-size: 1.15rem; }
+    .infos ul { padding-left: 1.2rem; margin: 0; }
+    .carte { width: 100%; height: 380px; border: 0; border-radius: var(--rayon); margin-top: 2rem; box-shadow: var(--ombre); }
+
+    /* Contact */
+    .contact-grille { display: grid; grid-template-columns: 1fr 1.4fr; gap: 3rem; }
+    @media (max-width: 860px) { .contact-grille { grid-template-columns: 1fr; } }
+    .contact-direct a.ligne { display: flex; align-items: center; gap: .8rem; padding: 1rem 1.2rem; margin-bottom: .8rem; background: var(--blanc); border-radius: var(--rayon); box-shadow: var(--ombre); text-decoration: none; color: var(--texte); font-weight: 500; }
+    .contact-direct a.ligne span { font-size: 1.5rem; }
+    form { background: var(--blanc); padding: 1.8rem; border-radius: var(--rayon); box-shadow: var(--ombre); display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    form .large { grid-column: 1 / -1; }
+    @media (max-width: 520px) { form { grid-template-columns: 1fr; } }
+    label { display: block; font-size: .9rem; font-weight: 600; margin-bottom: .3rem; }
+    input, select, textarea { width: 100%; padding: .7rem .8rem; border: 1px solid #cfd8de; border-radius: 8px; font: inherit; }
+    input:focus, select:focus, textarea:focus { outline: 2px solid var(--mer-clair); border-color: transparent; }
+    form .envoi { display: flex; gap: .8rem; flex-wrap: wrap; }
+    form .aide { font-size: .85rem; color: var(--gris); margin: 0; }
+
+    footer { background: #0c2f52; color: rgba(255, 255, 255, .8); text-align: center; padding: 2rem 1rem; font-size: .9rem; }
+    footer a { color: var(--blanc); }
+
+    /* Barre d'appel mobile */
+    .barre-mobile { display: none; }
+    @media (max-width: 760px) {
+      .barre-mobile { display: flex; position: fixed; inset: auto 0 0 0; z-index: 10; gap: .5rem; padding: .6rem; background: var(--blanc); box-shadow: 0 -2px 12px rgba(0, 0, 0, .12); }
+      .barre-mobile a { flex: 1; text-align: center; padding: .7rem; }
+      body { padding-bottom: 4.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="nav">
+    <a class="logo" href="#">🌊 Collioure · Plage de l'Oli</a>
+    <ul>
+      <li><a href="#logement">Le logement</a></li>
+      <li><a href="#photos">Photos</a></li>
+      <li><a href="#tarifs">Tarifs</a></li>
+      <li><a href="#infos">Infos pratiques</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <span class="note">★ 4,81 · 96 avis voyageurs sur Airbnb</span>
+      <h1>Un appartement les pieds dans l'eau à Collioure</h1>
+      <p>T1 bis de 25 m² surplombant la crique de la plage de l'Oli, sur le sentier du littoral. Balcon vue mer, accès direct à la plage, parking couvert.</p>
+      <div class="actions">
+        <a class="bouton" href="#contact">Demander mes dates</a>
+        <a class="bouton secondaire" href="#photos">Voir les photos</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="fond-sable">
+    <div class="conteneur">
+      <h2>Ce qui rend ce logement unique</h2>
+      <div class="atouts">
+        <div class="atout"><div class="icone">🏖️</div><h3>Accès direct à la crique</h3><p>Descendez directement de l'appartement sur la plage de l'Oli, une crique abritée de la tramontane.</p></div>
+        <div class="atout"><div class="icone">☀️</div><h3>Balcon plein est</h3><p>Petit-déjeuner au soleil levant avec vue sur la plage et la mer.</p></div>
+        <div class="atout"><div class="icone">🚗</div><h3>Parking couvert</h3><p>Une place de garage privée sur place, un vrai luxe à Collioure en été.</p></div>
+        <div class="atout"><div class="icone">📶</div><h3>Wifi rapide</h3><p>Fibre à près de 200 Mbit/s, idéal pour télétravailler face à la mer.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="logement">
+    <div class="conteneur deux-colonnes">
+      <img src="img/balcon-vue-crique.jpg" alt="Balcon avec table dressée et vue sur la crique de l'Oli" loading="lazy">
+      <div>
+        <h2>Le logement</h2>
+        <p>Studio de 25 m² récemment refait, traversant et bien agencé, avec un <strong>coin nuit séparé</strong> du séjour. Il se trouve dans une petite résidence les pieds dans l'eau, sur le sentier du littoral entre Collioure et Port-Vendres.</p>
+        <p>Idéal pour un couple, une petite famille, les randonneurs et les amateurs de snorkeling.</p>
+        <ul class="chiffres">
+          <li>👥 Jusqu'à 3 voyageurs</li>
+          <li>🛏️ 1 chambre · lit double</li>
+          <li>🛋️ Canapé-lit</li>
+          <li>🚿 1 salle de douche</li>
+          <li>🐾 Animaux acceptés</li>
+          <li>♿ De plain-pied (4 marches)</li>
+        </ul>
+        <a class="bouton" href="#contact">Vérifier les disponibilités</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="photos" class="fond-sable">
+    <div class="conteneur">
+      <h2>Photos</h2>
+      <div class="galerie" id="galerie">
+        <button type="button"><img src="img/balcon-vue-crique.jpg" alt="Le balcon et la vue sur la crique" loading="lazy"></button>
+        <button type="button"><img src="img/plage-oli.jpg" alt="La plage de l'Oli, en bas de la résidence" loading="lazy"></button>
+        <button type="button"><img src="img/sejour-repas.jpg" alt="Le coin repas et la cuisine" loading="lazy"></button>
+        <button type="button"><img src="img/sejour-canape.jpg" alt="Le séjour avec canapé-lit" loading="lazy"></button>
+        <button type="button"><img src="img/chambre.jpg" alt="Le coin nuit avec lit double" loading="lazy"></button>
+        <button type="button"><img src="img/cuisine.jpg" alt="La cuisine équipée" loading="lazy"></button>
+        <button type="button"><img src="img/salle-de-douche.jpg" alt="La salle de douche" loading="lazy"></button>
+        <button type="button"><img src="img/balcon-parasol.jpg" alt="Le balcon avec parasol" loading="lazy"></button>
+        <button type="button"><img src="img/baie-collioure.jpg" alt="La baie de Collioure depuis le sentier du littoral" loading="lazy"></button>
+        <button type="button"><img src="img/randonnee-tour-madeloc.jpg" alt="Randonnée vers la tour Madeloc, vue sur Collioure" loading="lazy"></button>
+      </div>
+    </div>
+  </section>
+
+  <dialog class="visionneuse" id="visionneuse">
+    <button type="button" class="ctrl fermer" aria-label="Fermer">✕</button>
+    <button type="button" class="ctrl prec" aria-label="Photo précédente">‹</button>
+    <img src="" alt="">
+    <p></p>
+    <button type="button" class="ctrl suiv" aria-label="Photo suivante">›</button>
+  </dialog>
+
+  <section>
+    <div class="conteneur">
+      <h2>Équipements</h2>
+      <ul class="equipements">
+        <li>Vue mer et vue plage</li>
+        <li>Accès direct à la plage</li>
+        <li>Balcon privé</li>
+        <li>Wifi rapide (194 Mbit/s)</li>
+        <li>Place de garage couverte</li>
+        <li>Stationnement gratuit dans la rue</li>
+        <li>TV HD 43 pouces</li>
+        <li>Lave-linge</li>
+        <li>Étendoir à linge</li>
+        <li>Plaque à induction</li>
+        <li>Four et micro-ondes</li>
+        <li>Réfrigérateur</li>
+        <li>Cafetière filtre et Nespresso</li>
+        <li>Bouilloire et grille-pain</li>
+        <li>Vaisselle, verres à vin, ustensiles</li>
+        <li>Table à manger</li>
+        <li>Sèche-cheveux</li>
+        <li>Fer à repasser</li>
+        <li>Placard et armoire</li>
+        <li>Ventilateurs</li>
+        <li>Chauffage</li>
+        <li>Détecteur de fumée</li>
+        <li>Arrivée autonome (boîte à clé)</li>
+        <li>Animaux acceptés</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="direct">
+    <div class="conteneur">
+      <h2>Pourquoi réserver en direct ?</h2>
+      <p>Vous louez le même appartement, auprès du même propriétaire — simplement sans intermédiaire.</p>
+      <div class="comparatif">
+        <div><strong>💶 Sans frais de plateforme</strong>Sur Airbnb, le prix inclut 18,5 % de frais de service. En direct, je réduis de 10% ce prix .</div>
+        <div><strong>👶 Pas de taxe de séjour pour les enfants</strong>Les moins de 18 ans en sont exonérés : en direct, elle est calculée correctement.</div>
+        <div><strong>💬 Contact direct</strong>Une question sur le logement, le quartier ou vos dates ? Vous parlez directement au propriétaire.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tarifs" class="fond-sable">
+    <div class="conteneur">
+      <h2>Tarifs &amp; réservation</h2>
+      <div class="atouts">
+        <div class="atout tarif"><h3>Basse saison</h3><p class="prix">420 €<small> / semaine</small></p></div>
+        <div class="atout tarif"><h3>Haute saison</h3><p class="prix">650 €<small> / semaine</small></p></div>
+      </div>
+      <p class="aide-tarif">Ménage compris. Taxe de séjour en sus (adultes uniquement). Le tarif exact dépend de vos dates : demandez-le via le formulaire de contact.</p>
+      <h3>Comment réserver ?</h3>
+      <ol class="etapes">
+        <li><strong>Demande</strong> — vous m'envoyez vos dates, je vous confirme la disponibilité et le prix.</li>
+        <li><strong>Acompte</strong> — le versement d'un acompte confirme votre réservation.</li>
+        <li><strong>Solde</strong> — le solde est à régler un mois avant votre arrivée.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="infos">
+    <div class="conteneur">
+      <h2>Infos pratiques</h2>
+      <div class="infos">
+        <div>
+          <h3>Arrivée &amp; départ</h3>
+          <ul>
+            <li>Arrivée autonome possible</li>
+            <li>Arrivée après 16h, départ avant 10h</li>
+            <li>Accès de plain-pied, seulement 4 marches à descendre</li>
+            <li>Le ménage est compris — merci de laisser l'appartement dans un état convenable</li>
+          </ul>
+        </div>
+        <div>
+          <h3>À savoir</h3>
+          <ul>
+            <li>Draps et serviettes non fournis (location possible sur place : 20 € par personne)</li>
+            <li>Pas de climatisation (ventilateurs fournis)</li>
+            <li>Pas de fête ni de soirée</li>
+            <li>3 voyageurs maximum</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Aux alentours</h3>
+          <ul>
+            <li>Le village et le château royal de Collioure par le sentier du littoral</li>
+            <li>Snorkeling dans la crique</li>
+            <li>Randonnées vers la tour Madeloc et le fort Saint-Elme</li>
+            <li>Port-Vendres et la Côte Vermeille</li>
+          </ul>
+        </div>
+      </div>
+      <iframe class="carte" title="Carte : plage de l'Oli, Collioure" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Plage+de+l'Oli,+Collioure&amp;z=14&amp;output=embed"></iframe>
+    </div>
+  </section>
+
+  <section id="contact" class="fond-sable">
+    <div class="conteneur">
+      <h2>Contact &amp; réservation</h2>
+      <div class="contact-grille">
+        <div class="contact-direct">
+          <p>Indiquez vos dates et le nombre de voyageurs : je vous réponds rapidement avec le tarif et les disponibilités.</p>
+          <a class="ligne" data-lien="tel"><span>📞</span><span class="valeur" data-valeur="telAffiche"></span></a>
+          <a class="ligne" data-lien="whatsapp" target="_blank" rel="noopener"><span>💬</span>WhatsApp</a>
+          <a class="ligne" data-lien="email"><span>✉️</span><span class="valeur" data-valeur="email"></span></a>
+        </div>
+
+        <form id="formulaire">
+          <div class="large">
+            <label for="nom">Votre nom</label>
+            <input id="nom" name="nom" required autocomplete="name">
+          </div>
+          <div>
+            <label for="arrivee">Arrivée</label>
+            <input id="arrivee" name="arrivee" type="date" required>
+          </div>
+          <div>
+            <label for="depart">Départ</label>
+            <input id="depart" name="depart" type="date" required>
+          </div>
+          <div>
+            <label for="adultes">Adultes</label>
+            <select id="adultes" name="adultes"><option>1</option><option selected>2</option><option>3</option></select>
+          </div>
+          <div>
+            <label for="enfants">Enfants (- de 18 ans)</label>
+            <select id="enfants" name="enfants"><option selected>0</option><option>1</option><option>2</option></select>
+          </div>
+          <div class="large">
+            <label for="profil">Lien vers un profil Airbnb, LinkedIn ou autre (facultatif)</label>
+            <input id="profil" name="profil" type="url" placeholder="https://…">
+            <p class="aide">Un profil est le bienvenu : il m'aide à faire connaissance avant votre séjour.</p>
+          </div>
+          <div class="large">
+            <label for="message">Message (facultatif)</label>
+            <textarea id="message" name="message" rows="4" placeholder="Animal, heure d'arrivée, location de linge…"></textarea>
+          </div>
+          <div class="large envoi">
+            <button class="bouton whatsapp" type="submit" data-canal="whatsapp">Envoyer par WhatsApp</button>
+            <button class="bouton" type="submit" data-canal="email">Envoyer par e-mail</button>
+          </div>
+          <p class="aide large" id="aide">Votre demande s'ouvre dans WhatsApp ou votre messagerie, prête à être envoyée.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Appartement plage de l'Oli · Collioure (66) · Location saisonnière entre particuliers</p>
+  </footer>
+
+  <div class="barre-mobile">
+    <a class="bouton" data-lien="tel">📞 Appeler</a>
+    <a class="bouton whatsapp" data-lien="whatsapp" target="_blank" rel="noopener">💬 WhatsApp</a>
+  </div>
+
+  <script>
+    // ====== À PERSONNALISER ======
+    const CONTACT = {
+      tel: "+33616108769",            // format international, sans espaces
+      telAffiche: "06 16 10 87 69",   // tel qu'affiché sur la page
+      email: "bintjes+contact@gmail.com",
+    };
+    // ==============================
+
+    const liens = {
+      tel: "tel:" + CONTACT.tel,
+      whatsapp: "https://wa.me/" + CONTACT.tel.replace(/\D/g, ""),
+      email: "mailto:" + CONTACT.email,
+    };
+    document.querySelectorAll("[data-lien]").forEach(a => a.href = liens[a.dataset.lien]);
+    document.querySelectorAll("[data-valeur]").forEach(el => el.textContent = CONTACT[el.dataset.valeur]);
+
+    // Navigation opaque après défilement
+    const nav = document.getElementById("nav");
+    const majNav = () => nav.classList.toggle("solide", scrollY > 60);
+    addEventListener("scroll", majNav, { passive: true });
+    majNav();
+
+    // Formulaire : compose un message WhatsApp ou e-mail
+    const form = document.getElementById("formulaire");
+    const arrivee = form.arrivee, depart = form.depart;
+    const aujourdhui = new Date().toISOString().slice(0, 10);
+    arrivee.min = aujourdhui;
+    arrivee.addEventListener("change", () => {
+      depart.min = arrivee.value;
+      if (depart.value && depart.value <= arrivee.value) depart.value = "";
+    });
+
+    const dateFr = d => new Date(d + "T12:00").toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      if (Number(form.adultes.value) + Number(form.enfants.value) > 3) {
+        document.getElementById("aide").textContent = "⚠️ Le logement accueille 3 voyageurs maximum.";
+        return;
+      }
+      const nuits = Math.round((new Date(depart.value) - new Date(arrivee.value)) / 864e5);
+      const texte =
+        `Bonjour, je suis ${form.nom.value}.\n` +
+        `Je souhaiterais louer l'appartement de la plage de l'Oli :\n` +
+        `- du ${dateFr(arrivee.value)} au ${dateFr(depart.value)} (${nuits} nuit${nuits > 1 ? "s" : ""})\n` +
+        `- ${form.adultes.value} adulte(s), ${form.enfants.value} enfant(s)\n` +
+        (form.profil.value.trim() ? `- Mon profil : ${form.profil.value.trim()}\n` : "") +
+        (form.message.value.trim() ? `\n${form.message.value.trim()}\n` : "") +
+        `\nEst-ce disponible ? Merci !`;
+      if (e.submitter?.dataset.canal === "email") {
+        location.href = `mailto:${CONTACT.email}?subject=${encodeURIComponent("Demande de location – plage de l'Oli")}&body=${encodeURIComponent(texte)}`;
+      } else {
+        open(`${liens.whatsapp}?text=${encodeURIComponent(texte)}`, "_blank", "noopener");
+      }
+    });
+
+    // Visionneuse photo
+    const vignettes = [...document.querySelectorAll("#galerie img")];
+    const visio = document.getElementById("visionneuse");
+    const visioImg = visio.querySelector("img"), visioTxt = visio.querySelector("p");
+    let courant = 0;
+    const afficher = i => {
+      courant = (i + vignettes.length) % vignettes.length;
+      visioImg.src = vignettes[courant].src;
+      visioImg.alt = visioTxt.textContent = vignettes[courant].alt;
+    };
+    vignettes.forEach((img, i) => img.parentElement.addEventListener("click", () => { afficher(i); visio.showModal(); }));
+    visio.querySelector(".prec").onclick = () => afficher(courant - 1);
+    visio.querySelector(".suiv").onclick = () => afficher(courant + 1);
+    visio.querySelector(".fermer").onclick = () => visio.close();
+    visio.addEventListener("click", e => { if (e.target === visio) visio.close(); });
+    addEventListener("keydown", e => {
+      if (!visio.open) return;
+      if (e.key === "ArrowLeft") afficher(courant - 1);
+      if (e.key === "ArrowRight") afficher(courant + 1);
+    });
+  </script>
+</body>
+</html>
